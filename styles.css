@@ -5,3 +5,8 @@
 body{
     background-color: var(--cor-de-fundo);
 }
+
+.titulo{
+    background-color: #FFFFFF;
+    margin-top: 10px;
+}
