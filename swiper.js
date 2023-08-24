@@ -7,7 +7,7 @@ const swiper = new Swiper('.swiper', {
     speed: 400,
 
     //quatidade de cards
-    slidesPerView: 4,
+    slidesPerView: 2,
 
     // Optional parameters
     direction: 'horizontal',
