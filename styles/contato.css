@@ -1,0 +1,32 @@
+.contato {
+    display: flex;
+    justify-content: center;
+    column-gap: 2em;
+    padding: 3em 0;
+}
+
+.contato__titulo {
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--azul);
+    margin: 1em 0;
+}
+
+.contato__texto {
+    font-weight: 300;
+    color: var(--azul);
+}
+
+.contato__email {
+    border-radius: 24px;
+    height: 22px;
+    padding: 10px 24px;
+    align-items: center;
+    gap: 10px;
+    color: var(--azul);
+}
+
+.contato__email::placeholder {
+    color: var(--azul);
+    background-image: url(../img/mail_black_24dp\ 1.svg) no-repeat;
+}
