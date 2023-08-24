@@ -1,6 +1,7 @@
 .contato {
     display: flex;
     justify-content: center;
+    align-items: center;
     column-gap: 2em;
     padding: 3em 0;
 }
@@ -10,6 +11,10 @@
     font-weight: 500;
     color: var(--azul);
     margin: 1em 0;
+    background: var(--teste, linear-gradient(160deg, #002F52 0%, #326589 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .contato__texto {
@@ -18,15 +23,16 @@
 }
 
 .contato__email {
-    border-radius: 24px;
-    height: 22px;
-    padding: 10px 24px;
-    align-items: center;
-    gap: 10px;
-    color: var(--azul);
+    padding: 1em;
+    border:  solid var(--azul);
+    border-radius: 22px;
+    height: 16px;
+    width: 40%;
 }
 
 .contato__email::placeholder {
+    font-family: 'Poppins', sans-serif;
     color: var(--azul);
-    background-image: url(../img/mail_black_24dp\ 1.svg) no-repeat;
+    background: url(../img/mail_black_24dp\ 1.svg) no-repeat;
+    padding-left: 2.2em;
 }

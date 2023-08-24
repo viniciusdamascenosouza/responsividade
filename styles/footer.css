@@ -1,0 +1,29 @@
+.listas__footer {
+    display: flex;
+    justify-content: space-evenly;
+    row-gap: 100px;
+}
+
+.titulo-principal__footer, .titulo__lista__footer {
+    color: var(--cinza);
+}
+
+.titulo-principal__footer {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.titulo__lista__footer {
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+}
+
+.link__footer {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    text-decoration: none;
+    color: var(--cinza);
+    margin-bottom: 1em;
+}
