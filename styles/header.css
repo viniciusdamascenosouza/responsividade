@@ -59,4 +59,22 @@
     -webkit-text-fill-color: transparent;
 }
 
-@media screen and (min-width: 1024px)
+.container__titulo {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .container__titulo, .container__titulo--negrito {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 30px;
+        display: flex;
+    }
+    .container__titulo--negrito {
+        font-weight: 700;
+    }
+
+    .container__menu-completo {
+        display: none;
+    }
+}
+

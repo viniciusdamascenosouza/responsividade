@@ -9,15 +9,18 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
     <header class="cabecalho">
         <div class="container-cabecalho">
-            <input type="checkbox" id="menu" class="container__botao">
-            <label for="menu">
-                <span class="cabecalho__menu-hamburguer container__imagem"></span>
-            </label>
+            <nav class="container__menu-completo">
+                <input type="checkbox" id="menu" class="container__botao">
+                <label for="menu">
+                    <span class="cabecalho__menu-hamburguer container__imagem"></span>
+                </label>
+            </nav>
 
             <ul class="lista-menu">
                 <li class="lista-menu__titulo">Categorias</li>
@@ -39,6 +42,7 @@
             </ul>
 
             <img src="./img/Logo.svg" alt="Logo da AluraBooks" class="container__imagem">
+            <h1 class="container__titulo"><b class="container__titulo--negrito">Alura</b>Books</h1>
         </div>
         <div class="container-cabecalho">
             <a href="#"><img src="./img/Favoritos.svg" alt="Meus favoritos" class="container-imagem"></a>
@@ -60,6 +64,8 @@
 
         <div class="conteudo__carrossel">
             <div class="swiper">
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                     <!-- Slides -->
@@ -70,8 +76,7 @@
                     <div class="swiper-slide"><img src="./img/Arquitetura.svg" alt=""></div>
                     ...
                 </div>
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
+
             
                 <!-- If we need navigation buttons -->
                 <div class="swiper-button-prev"></div>

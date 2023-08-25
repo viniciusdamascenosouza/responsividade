@@ -11,9 +11,10 @@
 .conteudo__carrossel {
     display: flex;
     align-items: center;
+    justify-content: center;
     column-gap: 1em;
-    margin: 0 1em;
     padding: 1%;
+    flex-wrap: wrap;
 }
 
 .swiper {
@@ -21,16 +22,18 @@
 }
 
 .swiper-slide img {
-    width: 100%;
-    height: 100%;
-    max-width: 100%;
-    /* min-width: 100%; */
-    max-height: 100%;
-    /* min-height: 100%; */
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
 }
 
 .swiper-pagination {
     position: initial;
+    margin: 1em 0;
+}
+
+.swiper-wrapper {
+    margin-left: 2.1em;
 }
 
 .card {
@@ -40,7 +43,6 @@
 
     width: 588px;
     height: 278px;
-    flex-shrink: 0;
     margin: 1em auto;
     padding: 3em;
 
@@ -113,3 +115,9 @@
     border-radius: 6px;
 }
 
+@media screen and (min-width: 1024px) {
+    .conteudo__carrossel {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
